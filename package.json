@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsnd --respawn --transpile-only --rs ./src/index.ts",
-    "build": "tsc --outDir ./dist/ --target es2015 --module commonjs ./src/index.ts"
+    "build": "tsc --outDir ./dist/ --target es2015 --module commonjs --esModuleInterop true ./src/index.ts"
   },
   "engines": {
     "node": "^14.17.3",
