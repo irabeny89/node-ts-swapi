@@ -1,0 +1,88 @@
+@hostname = localhost
+@port = 4000
+@host = {{hostname}}:{{port}}
+
+# type FilmType = {
+#   id: string;
+#   characters: string[];
+#   created: string;
+#   director: string;
+#   edited: string;
+#   episode_id: number;
+#   opening_crawl: string;
+#   planets: string[];
+#   producer: string;
+#   release_date: string;
+#   species: string[];
+#   starships: string[];
+#   title: string;
+#   url: string;
+#   vehicles: string[];
+# }
+
+# type CommentType = {
+#   id: string;
+#   movieId: string;
+#   movieTitle: string;
+#   commenterIp: string;
+#   comment: string;
+#   createdAt?: Date;
+#   updatedAt?: Date;
+# }
+
+###
+
+# Get all movies
+GET http://{{host}}/api/movies
+
+# Response: {
+#   moviesCount: number,
+#   movies: FilmType[],
+#   commentsCount: number,
+#   comments: CommentType,
+# }
+
+###
+
+# Get a movie
+GET http://{{host}}/api/movies/1
+
+# Parameter: movie id
+
+# Response: {
+#   movie: FilmType,
+#   comments: currentMovieComments,
+#   commentsCount: number,
+# }
+
+###
+
+# Comment on a movie
+POST http://{{host}}/api/movies/1/comments
+Content-Type: application/json
+
+# Request body
+{
+  "comment": "Test comment 2"
+}
+
+# Response: CommentType
+
+###
+
+# Get characters in a movie
+GET http://{{host}}/api/movies/1/characters?sort=height
+
+# Query fields and values:
+
+#  sort: "name" | "height" | "mass" | "hair_color" | "skin_color" | "eye_color" | "birth_year" | "gender" | "homeworld"
+
+#  order: "asc" | "desc";
+
+# Response: CharacterType[]
+
+###
+
+# 
+
+###
