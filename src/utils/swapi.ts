@@ -1,5 +1,7 @@
 import axios from "axios";
 
-export const swapi = axios.create({
+const swapi = axios.create({
   baseURL: "https://swapi.dev/api"
 })
+
+export default swapi

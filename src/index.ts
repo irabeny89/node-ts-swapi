@@ -1,4 +1,4 @@
-import { app } from './utils/express';
+import app from './utils/express';
 import config from './config';
 
 const { host, port } = config;

@@ -1,6 +1,6 @@
 {
-  "name": "dev.swapi.io",
-  "version": "1.0.0",
+  "name": "dev-swapi-io",
+  "version": "1.0.1",
   "description": "SWAPI server",
   "main": "./dist/index.js",
   "scripts": {

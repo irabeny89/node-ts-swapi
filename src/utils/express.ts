@@ -5,7 +5,7 @@ import helmet from "helmet";
 import cors from "cors";
 import moviesRoutes from "../routes/movies.routes"
 // express app instance
-export const app = express();
+const app = express();
 // helper middlewares
 app.use(morgan("dev"));
 app.use(compression());
@@ -19,3 +19,5 @@ app.use("/api", moviesRoutes);
 app.use((err: Errback, _req: Request, res: Response) => {
   if (err) return res.status(400).json(err);
 });
+
+export default app

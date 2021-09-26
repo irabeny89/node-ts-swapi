@@ -1,5 +1,5 @@
 import { RequestHandler, RequestParamHandler } from "express";
-import { swapi } from "../utils/swapi";
+import swapi from "../utils/swapi";
 import type {
   CharacterType,
   CommentType,
