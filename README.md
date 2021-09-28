@@ -4,7 +4,7 @@
 
 Simple Star Wars API to query and comment on specific films. 
 
-The data is fetched from (SWAPI)[https://swapi.dev]
+The data is fetched from [SWAPI](https://swapi.dev)
 
 ## How to start
 
@@ -16,7 +16,7 @@ I used Rest Client and you can check and run the tests using the `swapi-test.res
 
 ### Note
 
-- (PNPM)[https://pnpm.io] package manager was used during development but you can use any other one of your choice(eg NPM or Yarn). If you intend to use other package manager please ``delete`` the `pnpm-lock.yaml` file and then run install with your package manager of choice. Eg. `npm install`
+- [PNPM](https://pnpm.io) package manager was used during development but you can use any other one of your choice(eg NPM or Yarn). If you intend to use other package manager please ``delete`` the `pnpm-lock.yaml` file and then run install with your package manager of choice. Eg. `npm install`
 
 - To use the `Rest Client` to test the endpoints you need to install the extension. I used VS Code and it was installed from there.
 
@@ -52,7 +52,7 @@ type CommentType = {
 
 ### Endpoints
 
-If you are connected it will use the live server((dev-swapi-io)[https://dev-swapi-io.herokuapp.com/]) else  it uses the local server.
+If you are connected it will use the live server([dev-swapi-io](https://dev-swapi-io.herokuapp.com/)) else  it uses the local server.
 
 #### Get all movies
 `GET http://localhost:4000/api/movies`
