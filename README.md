@@ -52,7 +52,7 @@ type CommentType = {
 
 ### Endpoints
 
-If you are connected it will use the live server([dev-swapi-io](https://dev-swapi-io.herokuapp.com/)) else  it uses the local server.
+If you are connected it will use the live server([dev-swapi-io](https://dev-swapi-io.herokuapp.com/api/movies)) else  it uses the local server.
 
 #### Get all movies
 `GET http://localhost:4000/api/movies`
